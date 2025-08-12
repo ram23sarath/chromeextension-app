@@ -4,7 +4,7 @@
     "version": "1.0",
     "description": "A template for a Chrome extension app.",
     "action": {
-        "default_popup": "popup.html",
+        "default_popup": "index.html",
         "default_icon": "icon.png"
     }
 }
