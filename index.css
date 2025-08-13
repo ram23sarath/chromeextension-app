@@ -19,6 +19,16 @@ body {
     border-radius: 15px;    
 }
 
+#delete-btn {
+    color: rgb(18, 233, 7);
+    border-color: rgb(18, 233, 7);
+    background: white;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 15px;    
+}
+
 #unordered-list {
     padding: none;
 }
