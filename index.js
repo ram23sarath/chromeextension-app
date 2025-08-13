@@ -4,6 +4,19 @@ const inputButton = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 const deleteButton = document.getElementById("delete-btn")
+const saveTabButton = document.getElementById("save-btn")
+
+const tab = [
+    {
+        url: "https://www.linkedin.com/in/per-harald-bjorge/",
+        title: "Per Harold Bjorge"
+    }
+]
+
+saveTabButton.addEventListener("dblclick", function() { 
+    console.log(tab[0].url)
+})
+
 
 if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage

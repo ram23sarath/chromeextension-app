@@ -29,6 +29,14 @@ body {
     border-radius: 15px;    
 }
 
+#save-btn {
+    background-color: rgba(220, 103, 79, 0.927);
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 15px;    
+}
+
 #unordered-list {
     padding: none;
 }
