@@ -6,17 +6,13 @@ const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 const deleteButton = document.getElementById("delete-btn")
 const saveTabButton = document.getElementById("save-btn")
 
-const tab = [
-    {
-        url: "https://www.linkedin.com/in/per-harald-bjorge/",
-        title: "Per Harold Bjorge"
-    }
-]
-
-saveTabButton.addEventListener("dblclick", function() { 
-    console.log(tab[0].url)
+saveTabButton.addEventListener("click", function() { 
+    chrome.tabs.query({active: true, currentWindow: true}, function(tab) {
+        myLeads.push(tab[0].url)
+        localStorage.setItem("myLeads", JSON.stringify(myLeads))
+        render(myLeads)
+    })
 })
-
 
 if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage
